@@ -321,4 +321,12 @@
 	return [sender frame].size.height;
 }
 
+
+- (IBAction)setSplitViewVertical:(id)sender {
+	[historySplitView setVertical:YES];
+}
+- (IBAction)setSplitViewHorizontal:(id)sender {
+	[historySplitView setVertical:NO];
+}
+
 @end

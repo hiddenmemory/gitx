@@ -8,17 +8,22 @@
 
 #import "PBNiceSplitView.h"
 
-static NSImage *bar;
+static NSImage *verticalBar;
+static NSImage *horizontalBar;
 static NSImage *grip;
 
 @implementation PBNiceSplitView
 
 +(void) initialize
 {
-	NSString *barPath = [[NSBundle mainBundle] pathForResource:@"mainSplitterBar" ofType:@"tiff"];
-	bar = [[NSImage alloc] initWithContentsOfFile: barPath];
-	[bar setFlipped: YES];
-
+	NSString *hBarPath = [[NSBundle mainBundle] pathForResource:@"mainSplitterBar" ofType:@"tiff"];
+	horizontalBar = [[NSImage alloc] initWithContentsOfFile: hBarPath];
+	[horizontalBar setFlipped: YES];
+	
+	NSString *vBarPath = [[NSBundle mainBundle] pathForResource:@"mainSplitterBarVertical" ofType:@"tiff"];
+	verticalBar = [[NSImage alloc] initWithContentsOfFile: vBarPath];
+	[verticalBar setFlipped: YES];
+	
 	NSString *gripPath = [[NSBundle mainBundle] pathForResource:@"mainSplitterDimple" ofType:@"tiff"];
 	grip = [[NSImage alloc] initWithContentsOfFile: gripPath];
 	[grip setFlipped: YES];
@@ -32,7 +37,12 @@ static NSImage *grip;
 	gripRect.size.width = 8;
 	
 	[self lockFocus];
-	[bar drawInRect:aRect fromRect:NSZeroRect operation:NSCompositeCopy fraction:1.0];
+	if( [self isVertical] ) {
+		[verticalBar drawInRect:aRect fromRect:NSZeroRect operation:NSCompositeCopy fraction:1.0];
+	} else {
+		[horizontalBar drawInRect:aRect fromRect:NSZeroRect operation:NSCompositeCopy fraction:1.0];
+	}
+	
 	[grip drawInRect:gripRect fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
 	[self unlockFocus];
 }
