@@ -33,6 +33,6 @@
 - (IBAction)installCliTool:(id)sender;
 
 - (IBAction)saveAction:sender;
-- (IBAction) showHelp:(id) sender;
+- (IBAction)showHelp:(id) sender;
 
 @end

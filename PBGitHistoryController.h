@@ -62,4 +62,8 @@
 - (CGFloat)splitView:(NSSplitView *)sender constrainMinCoordinate:(CGFloat)proposedMin ofSubviewAt:(NSInteger)offset;
 - (CGFloat)splitView:(NSSplitView *)sender constrainMaxCoordinate:(CGFloat)proposedMax ofSubviewAt:(NSInteger)offset;
 
+
+- (IBAction)setSplitViewVertical:(id)sender;
+- (IBAction)setSplitViewHorizontal:(id)sender;
+
 @end

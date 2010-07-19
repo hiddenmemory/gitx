@@ -31,6 +31,8 @@
 		47DBDBCA0E95016F00671A1E /* PBNSURLPathUserDefaultsTransfomer.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DBDBC90E95016F00671A1E /* PBNSURLPathUserDefaultsTransfomer.m */; };
 		770B37ED0679A11B001EADE2 /* GitTest_DataModel.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 770B37EC0679A11B001EADE2 /* GitTest_DataModel.xcdatamodel */; };
 		77C8280E06725ACE000B614F /* ApplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C8280C06725ACE000B614F /* ApplicationController.m */; };
+		830B618211F47C5B00834BFF /* mainSplitterBarVertical.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 830B618111F47C5B00834BFF /* mainSplitterBarVertical.tiff */; };
+		830B61C511F481F300834BFF /* mainSplitterDimpleVertical.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 830B61C411F481F300834BFF /* mainSplitterDimpleVertical.tiff */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -190,6 +192,8 @@
 		77C82804067257F0000B614F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		77C8280B06725ACE000B614F /* ApplicationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationController.h; sourceTree = "<group>"; };
 		77C8280C06725ACE000B614F /* ApplicationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationController.m; sourceTree = "<group>"; };
+		830B618111F47C5B00834BFF /* mainSplitterBarVertical.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = mainSplitterBarVertical.tiff; path = Images/mainSplitterBarVertical.tiff; sourceTree = "<group>"; };
+		830B61C411F481F300834BFF /* mainSplitterDimpleVertical.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = mainSplitterDimpleVertical.tiff; path = Images/mainSplitterDimpleVertical.tiff; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* GitX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		911111E10E58BD5A00BF76B4 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/RepositoryWindow.xib; sourceTree = "<group>"; };
@@ -489,6 +493,8 @@
 		F50A41130EBB872D00208746 /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
+				830B61C411F481F300834BFF /* mainSplitterDimpleVertical.tiff */,
+				830B618111F47C5B00834BFF /* mainSplitterBarVertical.tiff */,
 				F50A411D0EBB874C00208746 /* mainSplitterBar.tiff */,
 				F50A411E0EBB874C00208746 /* mainSplitterDimple.tiff */,
 			);
@@ -819,6 +825,8 @@
 				47DBDB6A0E94EF6500671A1E /* Preferences.xib in Resources */,
 				47DBDBB10E94F6CA00671A1E /* Updates.png in Resources */,
 				F569AE930F2CBD7C00C2FFA7 /* Credits.html in Resources */,
+				830B618211F47C5B00834BFF /* mainSplitterBarVertical.tiff in Resources */,
+				830B61C511F481F300834BFF /* mainSplitterDimpleVertical.tiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
