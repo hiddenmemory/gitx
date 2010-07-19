@@ -323,10 +323,18 @@
 
 
 - (IBAction)setSplitViewVertical:(id)sender {
+	NSLog(@"setSplitViewVertical");
 	[historySplitView setVertical:YES];
+	[historySplitView setAutosaveName:@"history-split-view-vertical"];
+	[historySplitView adjustSubviews];
+	[self updateView];
 }
 - (IBAction)setSplitViewHorizontal:(id)sender {
+	NSLog(@"setSplitViewHorizontal");
 	[historySplitView setVertical:NO];
+	[historySplitView setAutosaveName:@"history-split-view-horizontal"];
+	[historySplitView adjustSubviews];
+	[self updateView];
 }
 
 @end
