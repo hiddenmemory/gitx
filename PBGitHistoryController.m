@@ -43,6 +43,13 @@
 	[[commitList headerView] setMenu:[self tableColumnMenu]];
 	[historySplitView setTopMin:33.0 andBottomMin:100.0];
 	[historySplitView uncollapse];
+	
+	if( [[NSUserDefaults standardUserDefaults] boolForKey:@"Repository Window Split View Vertical Rotation"] ) {
+		[self setSplitViewVertical:self];
+	} else {
+		[self setSplitViewHorizontal:self];
+	}
+	
 	[super awakeFromNib];
 }
 
@@ -328,6 +335,8 @@
 	[historySplitView setAutosaveName:@"history-split-view-vertical"];
 	[historySplitView adjustSubviews];
 	[self updateView];
+	
+	[[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"Repository Window Split View Vertical Rotation"];
 }
 - (IBAction)setSplitViewHorizontal:(id)sender {
 	NSLog(@"setSplitViewHorizontal");
@@ -335,6 +344,8 @@
 	[historySplitView setAutosaveName:@"history-split-view-horizontal"];
 	[historySplitView adjustSubviews];
 	[self updateView];
+
+	[[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"Repository Window Split View Vertical Rotation"];
 }
 
 @end
